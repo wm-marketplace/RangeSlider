@@ -1,0 +1,151 @@
+{
+  "displayName" : "NoUIRangeSlider",
+  "group" : "",
+  "iconUrl" : "/resources/images/imagelists/sliders.png",
+  "resources" : {
+    "styles" : [ "/pages/Main/Main.css", "/resources/nouislider.css" ],
+    "scripts" : [ "/resources/nouislider.min.js" ]
+  },
+  "properties" : {
+    "start" : {
+      "type" : "number",
+      "displayName" : "Range Start",
+      "description" : "Starting value of the range selection",
+      "bindable" : "in-out-bound",
+      "value" : 200,
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "end" : {
+      "type" : "number",
+      "displayName" : "Range End",
+      "description" : "Ending value of the range selection",
+      "bindable" : "in-out-bound",
+      "value" : 700,
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "min" : {
+      "type" : "number",
+      "displayName" : "Min Value",
+      "description" : "Minimum value of the range",
+      "bindable" : "in-bound",
+      "value" : 0,
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "max" : {
+      "type" : "number",
+      "displayName" : "Max Value",
+      "description" : "Maximum value of the range",
+      "bindable" : "in-bound",
+      "value" : 1000,
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "step" : {
+      "type" : "number",
+      "displayName" : "Step",
+      "description" : "Step value for range selection",
+      "bindable" : "in-bound",
+      "value" : 50,
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "pipdensity" : {
+      "type" : "number",
+      "displayName" : "Pip Density (%)",
+      "description" : "Density of the scale pips shown for every provided %",
+      "bindable" : "in-bound",
+      "value" : 5,
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "disable" : {
+      "type" : "boolean",
+      "displayName" : "Disable",
+      "description" : "Disable the slider",
+      "bindable" : "in-bound",
+      "widget" : "checkbox",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "pipmode" : {
+      "type" : "string",
+      "displayName" : "Pip Mode",
+      "description" : "Mode of the pips",
+      "bindable" : "in-bound",
+      "isList" : false,
+      "value" : "steps",
+      "widget" : "list",
+      "options" : "bind:Variables.staticVariableMode.dataSet",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "values" : {
+      "type" : "number",
+      "displayName" : "pip values",
+      "description" : "Pip values",
+      "bindable" : "in-bound",
+      "isList" : true,
+      "value" : 100,
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "showgaolamountcontainer" : {
+      "type" : "string",
+      "displayName" : "Showgaolamountcontainer",
+      "description" : "to manage two containers",
+      "bindable" : "in-bound",
+      "widget" : "list",
+      "options" : [ "true", "false" ],
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "containerid" : {
+      "type" : "string",
+      "displayName" : "Container Id",
+      "description" : "Container Id for the slider",
+      "bindable" : "in-bound",
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    }
+  },
+  "events" : {
+    "onStart" : {
+      "description" : "Callback action which will be triggered on handle activation, start dragging.",
+      "eventData" : "",
+      "displayName" : ""
+    },
+    "onEnd" : {
+      "description" : "Callback action which will be triggered on handle release, after dragging.",
+      "eventData" : "",
+      "displayName" : ""
+    },
+    "onHandlechange" : {
+      "description" : "Callback action which will be triggered on changing the slider position",
+      "eventData" : "",
+      "displayName" : ""
+    }
+  },
+  "methods" : { }
+}

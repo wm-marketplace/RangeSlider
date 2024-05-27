@@ -1,0 +1,6 @@
+{
+  "id" : "googleapis",
+  "type" : "RestService",
+  "title" : "googleapis",
+  "mockEnabled" : false
+}

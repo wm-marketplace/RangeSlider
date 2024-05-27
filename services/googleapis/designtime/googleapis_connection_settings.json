@@ -1,0 +1,32 @@
+{
+  "endpointAddress" : "http://maps.googleapis.com/maps/api/directions/xml",
+  "method" : "GET",
+  "headers" : { },
+  "redirectEnabled" : true,
+  "requestBody" : "",
+  "queryParams" : {
+    "origin" : "Toronto",
+    "destination" : "Montreal",
+    "sensor" : "false"
+  },
+  "authDetails" : null,
+  "contentType" : "application/json",
+  "multiParamInfoList" : null,
+  "sampleHttpResponseDetails" : {
+    "statusCode" : 200,
+    "headers" : {
+      "Vary" : [ "Accept-Language" ],
+      "Pragma" : [ "no-cache" ],
+      "Date" : [ "Fri, 21 Jun 2019 05:15:55 GMT" ],
+      "X-XSS-Protection" : [ "0" ],
+      "Server" : [ "mafe" ],
+      "Cache-Control" : [ "no-cache, must-revalidate" ],
+      "X-Frame-Options" : [ "SAMEORIGIN" ],
+      "Server-Timing" : [ "gfet4t7; dur=3" ],
+      "Expires" : [ "Fri, 01 Jan 1990 00:00:00 GMT" ],
+      "Content-Type" : [ "application/xml; charset=UTF-8" ]
+    },
+    "responseBody" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<DirectionsResponse>\n <status>REQUEST_DENIED</status>\n <error_message>You must use an API key to authenticate each request to Google Maps Platform APIs. For additional information, please refer to http://g.co/dev/maps-no-account</error_message>\n</DirectionsResponse>\n",
+    "convertedResponse" : "{\"status\":\"REQUEST_DENIED\",\"error_message\":\"You must use an API key to authenticate each request to Google Maps Platform APIs. For additional information, please refer to http://g.co/dev/maps-no-account\"}"
+  }
+}

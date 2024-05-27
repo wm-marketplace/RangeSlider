@@ -1,0 +1,18 @@
+{
+  "appNotification" : {
+    "_id" : "wm-appNotification-wm.NotificationVariable-1454664620943",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "class",
+      "type" : "list",
+      "value" : "Error"
+    }, {
+      "target" : "toasterPosition",
+      "type" : "list",
+      "value" : "bottom right"
+    } ],
+    "name" : "appNotification",
+    "operation" : "toast",
+    "owner" : "App"
+  }
+}
