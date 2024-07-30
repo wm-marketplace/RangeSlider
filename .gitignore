@@ -27,6 +27,7 @@ src/main/webapp/wmmobile/**
 src/main/webapp/wmProperties.js
 target/**
 src/main/webapp/WEB-INF/prefabs/*/build/**
+src/main/webapp/WEB-INF/prefabs/**/page.min.json
 src/main/webapp/pages/*/page.min.json
 backup/**
 generated-angular-app/**
